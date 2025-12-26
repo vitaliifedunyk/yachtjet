@@ -1,168 +1,210 @@
-# Vanilla Tailwind Project
+# YachtJet - Luxury Yacht Rental Landing Page
 
-Проект на базі Vite з Tailwind CSS та додатковими плагінами для розробки сучасних веб-додатків.
+A landing page for luxury yacht rentals, built using **Tailwind CSS**
+for modern, utility-first styling.
 
-A Vite-based project with Tailwind CSS and additional plugins for modern web development.
+## Live Demo
 
-## 🚀 Як запустити / How to Run
+The live project can be found at:
+**https://vitaliifedunyk.github.io/yachtjet/**
 
-### Встановлення залежностей / Install Dependencies
+---
 
-```bash
-npm install
-```
+## Getting Started
 
-### Запуск dev сервера / Run Development Server
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/vitaliifedunyk/yachtjet.git
+   cd yachtjet
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Project
+
+#### Development Mode
+
+Start the development server with hot module replacement:
 
 ```bash
 npm run dev
 ```
 
-Відкрийте браузер за адресою `http://localhost:5173`
+The project will be available at `http://localhost:5173` (or the port shown in
+the terminal).
 
-Open your browser at `http://localhost:5173`
+#### Build for Production
 
-### Збірка для продакшну / Build for Production
+The project is automatically built and deployed to GitHub Pages via GitHub
+Actions when you push changes to the `main` branch. No manual build step is
+required.
+
+If you want to test the production build locally:
 
 ```bash
 npm run build
 ```
 
-### Попередній перегляд збірки / Preview Production Build
+The optimized files will be generated in the `dist` directory.
+
+#### Preview Production Build
+
+Preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-## 📦 Встановлені залежності / Installed Dependencies
+### Automatic Deployment
 
-### Основні залежності / Main Dependencies
+The project uses GitHub Actions for continuous deployment. Every push to the
+`main` branch automatically:
 
-- **@tailwindcss/vite** (^4.1.18) - Офіційний плагін Vite для Tailwind CSS v4. Дозволяє використовувати Tailwind CSS без додаткової конфігурації.
+- Installs dependencies
+- Builds the project
+- Deploys to GitHub Pages
 
-  - Official Vite plugin for Tailwind CSS v4. Allows using Tailwind CSS without additional configuration.
+The deployment workflow is configured in `.github/workflows/deploy.yml`.
 
-- **tailwindcss** (^4.1.18) - Утилітарний CSS фреймворк для швидкої розробки сучасних інтерфейсів.
+---
 
-  - Utility-first CSS framework for rapid UI development.
+## Technologies Used
 
-- **vite-plugin-html-inject** (^1.1.2) - Плагін для інжекції HTML частин (partials) в основний HTML файл. Дозволяє використовувати компонентний підхід до HTML.
+- **Vite** - Build tool and development server
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **HTML5** - Markup structure
+- **JavaScript (ES6+)** - Interactive functionality
 
-  - Plugin for injecting HTML partials into the main HTML file. Enables component-based approach to HTML.
+---
 
-- **vite-plugin-full-reload** (^1.2.0) - Плагін для автоматичного перезавантаження сторінки при зміні файлів. Корисний для роботи з HTML partials.
-  - Plugin for automatic page reload on file changes. Useful when working with HTML partials.
-
-### Dev залежності / Dev Dependencies
-
-- **vite** (^7.2.4) - Сучасний інструмент для збірки фронтенд проєктів з швидкою розробкою.
-  - Modern build tool for frontend projects with fast development experience.
-
-## 🏗️ Структура проекту / Project Structure
+## Project Structure
 
 ```
-vanilla-tailwind/
-├── index.html          # Головний HTML файл / Main HTML file
-├── vite.config.js      # Конфігурація Vite / Vite configuration
-├── package.json        # Залежності та скрипти / Dependencies and scripts
-└── src/
-    ├── main.js         # Точка входу JavaScript / JavaScript entry point
-    ├── css/
-    │   └── style.css   # Головний CSS файл з Tailwind / Main CSS file with Tailwind
-    ├── img/            # Зображення / Images
-    ├── partials/       # HTML частини для інжекції / HTML partials for injection
-    └── public/         # Статичні файли / Static files
+yachtjet/
+├── src/
+│   ├── css/          # Styles and Tailwind configuration
+│   ├── img/          # Images and assets
+│   ├── partials/     # HTML partials/components
+│   ├── index.html    # Main HTML file
+│   └── main.js       # Main JavaScript file
+├── public/           # Static assets
+├── package.json      # Project dependencies and scripts
+└── vite.config.js    # Vite configuration
 ```
 
-## 🔧 Конфігурація / Configuration
+---
 
-### Vite Config
+# YachtJet - Лендінг для Оренди Розкішних Яхт
 
-Проект налаштований з:
+Лендінг для оренди розкішних яхт, побудований з використанням **Tailwind
+CSS** для сучасного, utility-first стилювання.
 
-- Tailwind CSS через офіційний плагін
-- HTML injection для роботи з partials
-- Автоматичне визначення base path для GitHub Pages
+## Демо
 
-The project is configured with:
+Живий проект знаходиться за адресою:
+**https://vitaliifedunyk.github.io/yachtjet/**
 
-- Tailwind CSS via official plugin
-- HTML injection for working with partials
-- Automatic base path detection for GitHub Pages
+---
 
-## 🌐 GitHub Pages Deployment
+## Початок Роботи
 
-Проект налаштований для автоматичного деплою на GitHub Pages через GitHub Actions.
+### Вимоги
 
-The project is configured for automatic deployment to GitHub Pages via GitHub Actions.
+- Node.js (рекомендовано v18 або вище)
+- npm або yarn менеджер пакетів
 
-### Як це працює / How it works
+### Встановлення
 
-1. При push в гілку `main` або `master` автоматично запускається workflow
+1. Клонуйте репозиторій:
 
-   - On push to `main` or `master` branch, workflow automatically starts
+   ```bash
+   git clone https://github.com/vitaliifedunyk/yachtjet.git
+   cd yachtjet
+   ```
 
-2. Виконується збірка проекту (`npm run build`)
+2. Встановіть залежності:
+   ```bash
+   npm install
+   ```
 
-   - Project build is executed (`npm run build`)
+### Запуск Проекту
 
-3. Створюється/оновлюється гілка `gh-pages` з результатами збірки
+#### Режим Розробки
 
-   - `gh-pages` branch is created/updated with build results
+Запустіть сервер розробки з hot module replacement:
 
-4. Сайт стає доступним на GitHub Pages
-   - Site becomes available on GitHub Pages
-
-### Налаштування в GitHub / GitHub Settings
-
-1. Перейдіть в Settings → Pages репозиторію
-
-   - Go to Settings → Pages in repository
-
-2. Виберіть Source: "Deploy from a branch"
-
-   - Select Source: "Deploy from a branch"
-
-3. Виберіть Branch: `gh-pages` / `/ (root)`
-
-   - Select Branch: `gh-pages` / `/ (root)`
-
-4. Збережіть налаштування
-   - Save settings
-
-Після першого деплою сайт буде доступний за адресою:
-`https://ваш-username.github.io/назва-репозиторію/`
-
-After first deployment, the site will be available at:
-`https://your-username.github.io/repository-name/`
-
-## 📝 Скрипти / Scripts
-
-- `npm run dev` - Запуск dev сервера з hot reload
-
-  - Start development server with hot reload
-
-- `npm run build` - Збірка проекту для продакшну
-
-  - Build project for production
-
-- `npm run preview` - Попередній перегляд зібраного проекту
-  - Preview built project
-
-## 🎨 Використання Tailwind CSS / Using Tailwind CSS
-
-Tailwind CSS вже налаштований і готовий до використання. Просто використовуйте утилітарні класи в HTML:
-
-Tailwind CSS is already configured and ready to use. Just use utility classes in HTML:
-
-```html
-<div class="flex items-center justify-center min-h-screen bg-gray-100">
-  <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>
-</div>
+```bash
+npm run dev
 ```
 
-## 📚 Додаткова інформація / Additional Information
+Проект буде доступний за адресою `http://localhost:5173` (або порт, показаний у
+терміналі).
 
-- [Vite Documentation](https://vite.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+#### Збірка для Продакшну
+
+Проект автоматично збирається та деплоїться на GitHub Pages через GitHub Actions
+при push змін до гілки `main`. Ручна збірка не потрібна.
+
+Якщо ви хочете протестувати продакшн збірку локально:
+
+```bash
+npm run build
+```
+
+Оптимізовані файли будуть згенеровані в директорії `dist`.
+
+#### Перегляд Продакшн Збірки
+
+Перегляньте продакшн збірку локально:
+
+```bash
+npm run preview
+```
+
+### Автоматичний Деплой
+
+Проект використовує GitHub Actions для безперервного деплою. Кожен push до гілки
+`main` автоматично:
+
+- Встановлює залежності
+- Збирає проект
+- Деплоїть на GitHub Pages
+
+Workflow деплою налаштований у `.github/workflows/deploy.yml`.
+
+---
+
+## Використані Технології
+
+- **Vite** - Інструмент збірки та сервер розробки
+- **Tailwind CSS v4** - Utility-first CSS фреймворк
+- **HTML5** - Структура розмітки
+- **JavaScript (ES6+)** - Інтерактивна функціональність
+
+---
+
+## Структура Проекту
+
+```
+yachtjet/
+├── src/
+│   ├── css/          # Стилі та конфігурація Tailwind
+│   ├── img/          # Зображення та ассети
+│   ├── partials/     # HTML частини/компоненти
+│   ├── index.html    # Головний HTML файл
+│   └── main.js       # Головний JavaScript файл
+├── public/           # Статичні ассети
+├── package.json      # Залежності та скрипти проекту
+└── vite.config.js    # Конфігурація Vite
+```

@@ -1,0 +1,35 @@
+<section id="rent-form">
+    <div>
+        <picture>
+            <source
+                media="(min-width: 1280px)"
+                srcset="./img/rent-form/desktop/form.png 1x, ./img/rent-form/desktop/form@2x.png 2x" />
+            <source
+                media="(min-width: 1024px)"
+                srcset="./img/rent-form/laptop/form.png 1x, ./img/rent-form/laptop/form@2x.png 2x" />
+            <source
+                media="(min-width: 768px)"
+                srcset="./img/rent-form/tablet/form.png 1x, ./img/rent-form/tablet/form@2x.png 2x" />
+            <img
+                src="./img/rent-form/mobile/form.png"
+                srcset="./img/rent-form/mobile/form.png 1x, ./img/rent-form/mobile/form@2x.png 2x"
+                alt=""
+                width="768"
+                height="534" />
+        </picture>
+        <div>
+            <h2>Rent a yacht now</h2>
+            <form>
+                <input type="text" name="user-fullname" id="user-fullname"
+                    placeholder="Full Name" required />
+                <input type="email" name="user-email" id="user-email" placeholder="Email"
+                    required />
+                <input type="tel" name="user-phone" id="user-phone" placeholder="Phone number"
+                    required />
+                <textarea name="Comment" id="user-comment" placeholder="Comment"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
