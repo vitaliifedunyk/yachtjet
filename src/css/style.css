@@ -10,9 +10,9 @@ body {
   background-color: #0e1823;
   background-image: url('../img/bg-yacht/mobile/bg-yacht.webp');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: top center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   margin: 0 auto;
   color: #fbfbfb;
   min-height: 100vh;
@@ -87,8 +87,8 @@ body {
   --color-primary-dark: #062730;
   --color-background: #0e1823;
   --color-surface: #fbfbfb;
-  --color-text-dark: #040306;
-  --color-text-light: #fbfbfb;
+  --color-dark: #040306;
+  --color-light: #fbfbfb;
   --color-text-muted: rgba(4, 3, 6, 0.4);
   --color-text-light-muted: rgba(251, 251, 251, 0.4);
   --color-text-light-70: rgba(251, 251, 251, 0.7);
@@ -128,18 +128,18 @@ body {
   /* Малі десктопи: 1280px */
   @media (min-width: 1280px) {
     .container-custom {
-      /* max-width: 1280px; */
-      padding-left: 100px; /* 100px */
-      padding-right: 100px;
+      max-width: 1280px;
+      padding-left: 50px; /* 100px */
+      padding-right: 50px;
     }
   }
 
   /* Великі десктопи: 1440px */
   @media (min-width: 1440px) {
     .container-custom {
-      /* max-width: 1440px; */
-      padding-left: 100px; /* 100px */
-      padding-right: 100px;
+      max-width: 1440px;
+      padding-left: 50px; /* 100px */
+      padding-right: 50px;
     }
   }
 }
