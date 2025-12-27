@@ -16,7 +16,7 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "vite": "^5.4.6"
   },
- "author": "Vitalii Fedunyk <vitalii.fedunyk@gmail.com>",
+  "author": "Vitalii Fedunyk <vitalii.fedunyk@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^4.1.18",

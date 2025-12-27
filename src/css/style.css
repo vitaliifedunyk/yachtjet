@@ -10,10 +10,12 @@ body {
   background-color: #0e1823;
   background-image: url('../img/bg-yacht/mobile/bg-yacht.webp');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
+  background-attachment: fixed;
   margin: 0 auto;
   color: #fbfbfb;
+  min-height: 100vh;
 }
 /* #endregion common */
 
@@ -226,3 +228,39 @@ body {
   }
 }
 /* #endregion container */
+
+/* #region menu animation */
+#menu {
+  background-color: var(--color-background);
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+#menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#menu:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+}
+
+#menu-toggle {
+  min-height: 28px;
+  min-width: 28px;
+}
+
+#burger-icon,
+#close-icon {
+  flex-shrink: 0;
+  position: absolute;
+}
+
+#burger-icon.hidden,
+#close-icon.hidden {
+  display: none !important;
+}
+
+/* #endregion menu animation */
