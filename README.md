@@ -1,12 +1,11 @@
 # YachtJet - Luxury Yacht Rental Landing Page
 
-A landing page for luxury yacht rentals, built using **Tailwind CSS**
-for modern, utility-first styling.
+A landing page for luxury yacht rentals, built using **Tailwind CSS** for
+modern, utility-first styling.
 
 ## Live Demo
 
-The live project can be found at:
-**https://vitaliifedunyk.github.io/yachtjet/**
+The live project can be found at: **https://vitaliifedunyk.github.io/yachtjet/**
 
 ---
 
@@ -85,6 +84,7 @@ The deployment workflow is configured in `.github/workflows/deploy.yml`.
 - **Tailwind CSS v4** - Utility-first CSS framework
 - **HTML5** - Markup structure
 - **JavaScript (ES6+)** - Interactive functionality
+- **Vite Plugins** - HTML inject, full reload, PostCSS sort media queries
 
 ---
 
@@ -94,8 +94,17 @@ The deployment workflow is configured in `.github/workflows/deploy.yml`.
 yachtjet/
 ├── src/
 │   ├── css/          # Styles and Tailwind configuration
-│   ├── img/          # Images and assets
+│   ├── img/          # Images and assets (responsive, retina support)
 │   ├── partials/     # HTML partials/components
+│   │   ├── header.html
+│   │   ├── menu.html
+│   │   ├── hero.html
+│   │   ├── about.html
+│   │   ├── yacht-selection.html
+│   │   ├── benefits.html
+│   │   ├── rent-form.html
+│   │   ├── reviews.html
+│   │   └── footer.html
 │   ├── index.html    # Main HTML file
 │   └── main.js       # Main JavaScript file
 ├── public/           # Static assets
@@ -107,8 +116,8 @@ yachtjet/
 
 # YachtJet - Лендінг для Оренди Розкішних Яхт
 
-Лендінг для оренди розкішних яхт, побудований з використанням **Tailwind
-CSS** для сучасного, utility-first стилювання.
+Лендінг для оренди розкішних яхт, побудований з використанням **Tailwind CSS**
+для сучасного, utility-first стилювання.
 
 ## Демо
 
@@ -191,6 +200,7 @@ Workflow деплою налаштований у `.github/workflows/deploy.yml`
 - **Tailwind CSS v4** - Utility-first CSS фреймворк
 - **HTML5** - Структура розмітки
 - **JavaScript (ES6+)** - Інтерактивна функціональність
+- **Vite Плагіни** - HTML inject, full reload, PostCSS sort media queries
 
 ---
 
@@ -200,8 +210,17 @@ Workflow деплою налаштований у `.github/workflows/deploy.yml`
 yachtjet/
 ├── src/
 │   ├── css/          # Стилі та конфігурація Tailwind
-│   ├── img/          # Зображення та ассети
+│   ├── img/          # Зображення та ассети (адаптивні, retina підтримка)
 │   ├── partials/     # HTML частини/компоненти
+│   │   ├── header.html
+│   │   ├── menu.html
+│   │   ├── hero.html
+│   │   ├── about.html
+│   │   ├── yacht-selection.html
+│   │   ├── benefits.html
+│   │   ├── rent-form.html
+│   │   ├── reviews.html
+│   │   └── footer.html
 │   ├── index.html    # Головний HTML файл
 │   └── main.js       # Головний JavaScript файл
 ├── public/           # Статичні ассети

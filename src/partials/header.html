@@ -5,14 +5,11 @@
             class="w-full flex justify-between items-center bg-surface rounded-lg h-12 pl-5 pr-5 relative md:py-1 md:px-7">
             <button id="menu-toggle"
                 class="absolute top-[9px] right-5 z-50 h-7 w-7 flex items-center justify-center cursor-pointer md:hidden"
-                aria-label="Toggle menu">
+                aria-label="Open menu"
+                data-menu-open>
                 <svg id="burger-icon" class="stroke-primary fill-primary" width="28" height="28" viewBox="0 0 32 32"
                     preserveAspectRatio="xMidYMid meet">
                     <use href="./img/icons.svg#icon-burger-menu"></use>
-                </svg>
-                <svg id="close-icon" class="stroke-primary fill-primary hidden" width="28" height="28"
-                    viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet">
-                    <use href="./img/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <a class="block font-sans font-medium text-base leading-none tracking-[-0.03em] text-primary"
